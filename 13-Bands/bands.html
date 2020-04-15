@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Favorite Bands</title>
+    </head>
+
+    <body>
+
+        <script>
+
+        //ARRAY OF FAVORITE ARTISTS
+        var favoriteArtists= ["blink 182", "Alice Merton","Tones and I", "Billie Eilish", "selena"];
+
+        var promptUser = prompt("Which artist do you like?");
+        
+        //CONVERTS USERS ANSWER TO LOWERCASE
+        var promptUserLower = promptUser.toLowerCase();    
+
+        //THIS CHECKS THE USERS ANSWER AND COMPARES IT WITH MY FAVORITE ARTISTS IF USERS ARTIST IS NOT IN MY ARRAY...
+        if (favoriteArtists.indexOf(promptUserLower)=== -1){
+            alert("Nah! They're pretty lame...");
+        } else {
+            alert("OMG! I love them too!");
+        }
+
+</script>
+    
+    </body>
+    
+    </html>
