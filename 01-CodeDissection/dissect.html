@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            Data Types, User Input, Conditional Logic
+        </title>
+    </head>
+
+    <body>
+        <script type="text/javascript">
+
+            //PROMPTS THE USER FOR NAME 
+            var userName = prompt("What's your name?");
+
+            //THIS WELCOMES THE USER TO THE PAGE
+            alert("Welcome to our page" +  userName  + "!");
+
+            //BOOLEAN - ASKS USER TO CONFIRM THEY LIKE DOGS
+            var confirmDogs = confirm("Do you like Dogs?");
+
+            //PET TYPE
+            var petType = "Brown Chiweenie";
+
+            //NUMBER
+            var petAge = "7"
+
+            //STRING
+            var petName = "Leo";
+
+            //CONFIRM PET IS A DOG
+            var petIsDog = true;
+
+            //NOTIFYS THE USER MY PET IS A DOG
+            if (petIsDog) {
+                alert("My pet is a dog");
+            } else {
+                alert("My pet is not a dog");
+            }
+
+            //IF USER CONFIRMS THEY LIKE DOGS THEY GET MY PETS INFORMATION
+            if (confirmDogs) {
+                alert(petName + " " + petType + " " + petAge);
+            } else {
+                alert("You don't get my dog's information");
+            }
+
+            //PET AGE IS NOT EQUAL TO 14
+            if (petAge !== 14) {
+                alert("My dog is not 14")
+            }
+
+
+            //PET AGE IS EQUAL TO 7
+            if (petAge === 7) {
+                alert("My dog is 7")
+                //MY PET IS LESS THAN 7
+            } else if (petAge < 7) {
+                alert("My pet is less than 7 years old");
+                //MY PET IS GREATER THAN 7
+            } else if (petAge > 7) {
+                alert("My pet is older than 7 years old");
+            }
+
+            //PROMPTS THE USER FOR DOGS AGE
+            var dogAge = prompt("How old is your dog?");
+
+            //THIS WILL NOT ADD CORRECTLY
+            alert(dogAge + 2);
+
+            //THIS WILL ADD CORRECTLY
+            alert(parseInt(dogAge) + 2);
+
+
+        </script>
+    </body>
+
+</html>
