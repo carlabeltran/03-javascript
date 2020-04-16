@@ -7,8 +7,7 @@
     </head>
     <body>
         <h1>Open the console to see the magic!</h1>
-        <script type="text/javascript">
-    //============== FUNCTIONS ====================//
+<script type="text/javascript">
 
         var brands = ["Apple", "Louis Vuitton", "Versace", "Samsung"];
 
@@ -16,9 +15,38 @@
 
         var booksOnMyShelf = ["#GirlBoss","Girl, Stop Apologizing", "Infulence The Psychology of Persuasion", "The Power of Habit: Why We Do What We Do in Life and Business"];
 
-        var thingsInFrontOfMe = ["Laptop","Projector","Dogs","Blanket", "Trader Joes Strawberry Chia Juice Smoothie"];
+        var thingsInFrontOfMe = ["Laptop","Projector", "Dogs","Blanket", "Trader Joes Strawberry Chia Juice Smoothie"];
 
         var howIFeel = ["Happy", "Comfortable", "Sleep Deprived", "Excited"];
+
+        //=========== WITHOUT FUNCTION =================//
+        
+        for (var i = 0; i < brands.length; i++) {
+            console.log(brands[i]);
+        };
+        console.log("-----------------------");
+
+        for (var i = 0; i < heroes.length; i++) {
+            console.log(heroes[i]);
+        };
+        console.log("-----------------------");
+
+        for (var i = 0; i < booksOnMyShelf.length; i++) {
+            console.log(booksOnMyShelf[i]);
+        };
+        console.log("-----------------------");
+
+        for (var i = 0; i < thingsInFrontOfMe.length; i++) {
+            console.log(thingsInFrontOfMe[i]);
+        };
+        console.log("-----------------------");
+
+        for (var i = 0; i < howIFeel.length; i++) {
+            console.log(howIFeel[i]);
+        };
+        console.log("-----------------------");
+
+        //============== FUNCTION ====================//
 
         //PASS ARRAY AS AN ARGUMENT
         function consoleInside(arr){
@@ -38,12 +66,6 @@
         consoleInside(booksOnMyShelf);
         consoleInside(thingsInFrontOfMe);
         consoleInside(howIFeel);
-
-
-
-
-
-
 
 
 </script>
