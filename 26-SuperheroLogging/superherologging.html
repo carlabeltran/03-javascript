@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Superhero Logging - With Functions</title>
+    </head>
+    <body>
+        <h1>Open the console to see the magic!</h1>
+        <script type="text/javascript">
+    //============== FUNCTIONS ====================//
+
+        var brands = ["Apple", "Louis Vuitton", "Versace", "Samsung"];
+
+        var heroes = ["My parents", "Kyle Dove", "Kristin Velasquez", "Stephanie Velasquez"];
+
+        var booksOnMyShelf = ["#GirlBoss","Girl, Stop Apologizing", "Infulence The Psychology of Persuasion", "The Power of Habit: Why We Do What We Do in Life and Business"];
+
+        var thingsInFrontOfMe = ["Laptop","Projector","Dogs","Blanket", "Trader Joes Strawberry Chia Juice Smoothie"];
+
+        var howIFeel = ["Happy", "Comfortable", "Sleep Deprived", "Excited"];
+
+        //PASS ARRAY AS AN ARGUMENT
+        function consoleInside(arr){
+
+            //WE LOOP THROUGH SELECTED ARRAY
+            for(var i = 0; i < arr.length; i++){
+                
+                //EACH TIME WE PRINT THE VALUE INSIDE ARRAY
+                console.log(arr[i]);
+
+            }
+            console.log("--------------------");
+        }
+
+        consoleInside(brands);
+        consoleInside(heroes);
+        consoleInside(booksOnMyShelf);
+        consoleInside(thingsInFrontOfMe);
+        consoleInside(howIFeel);
+
+
+
+
+
+
+
+
+</script>
+    
+    </body>
+    
+    </html>
